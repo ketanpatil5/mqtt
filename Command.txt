@@ -1,0 +1,95 @@
+*SSL Config Command
+
+AT+CSSLCFG="sslversion",0,3
+AT+CSSLCFG="authmode",0,2
+AT+CSSLCFG="ignorelocaltime",0,1
+AT+CSSLCFG="negotiatetime",0,300
+AT+CSSLCFG="cacert",0,"ca_cert.pem"
+AT+CSSLCFG="clientcert",0,"client_cert.pem"
+AT+CSSLCFG="clientkey",0,"client_key.pem"
+AT+CSSLCFG="enableSNI",0,1
+
+"sslversion",0,3 for tls hivehqm uses it
+
+
+*Delete .pem or .der file
+
+AT+CCERTDELE="clientcert.pem"
+AT+CCERTDELE="clientkey.pem"
+AT+CCERTDELE="ca_cert.pem"
+AT+CCERTDELE="cacert.pem"
+
+*List .pem file
+
+AT+CCERTLIST
+
+
+*Write value
+
+AT+CCERTDOWN="ca_cert.pem", 1970
+AT+CCERTDOWN="client_cert.pem", 1970
+AT+CCERTDOWN="client_key.pem", 1970
+AT+CCERTDOWN="password.pem", 1970
+
+*Assign config file
+
+AT+CSSLCFG="cacert",0,"ca_cert.pem"
+AT+CSSLCFG="clientcert",0,"client_cert.pem"
+AT+CSSLCFG="clientkey",0,"client_key.pem"
+AT+CSSLCFG="password",0,"password.pem"
+
+*Activate PDP
+
+AT+CGACT=1,0
+AT+CGACT=1,1 Activate
+AT+CGACT?
+
+*SSL Config
+
+AT+CSSLCFG?
+
+
+*Assigned input
+
+AT+CGPADDR=1
+
+*The AT+CMQTTSSLCFG command can specify which SSL version to use. For example, if your broker supports TLS 1.2, use:
+
+AT+CMQTTSSLCFG=0,3  // Use TLS 1.2
+
+*SSl Config
+
+This AT command configures SSL settings for MQTT client ID 0.
+The second parameter (0) specifies the SSL profile index.
+
+AT+CMQTTSSLCFG=0,0
+
+* Reset Module
+
+AT+RST
+
+* Reset Sim Module
+
+AT+CFUN=1,1
+
+* Automatic Network Selection
+
+AT+COPS=0
+
+* APN Config
+
+AT+CGDCONT=1,"IP","<your_apn>"
+
+* Registration of Network
+
+AT+CREG?
+
+*LTE, GSM , Automatic
+
+AT+CNMP?
+Response:
+2 → Automatic network mode.
+13 → LTE only.
+38 → GSM only.
+
+Ex:AT+CNMP=2
