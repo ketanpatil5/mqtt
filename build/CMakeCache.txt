@@ -160,7 +160,7 @@ CMAKE_INSTALL_MANDIR:PATH=
 CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/mqtt_ssl
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/MQTT
 
 //Run-time variable data (LOCALSTATEDIR/run)
 CMAKE_INSTALL_RUNSTATEDIR:PATH=
@@ -216,7 +216,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=mqtt_ssl
+CMAKE_PROJECT_NAME:STATIC=MQTT
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=3.6.0
@@ -341,6 +341,15 @@ MBEDTLS_FATAL_WARNINGS:BOOL=ON
 MBEDTLS_USER_CONFIG_FILE:FILEPATH=
 
 //Value Computed by CMake
+MQTT_BINARY_DIR:STATIC=C:/Users/Admin/Desktop/ESP32/MQTT/build
+
+//Value Computed by CMake
+MQTT_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+MQTT_SOURCE_DIR:STATIC=C:/Users/Admin/Desktop/ESP32/MQTT
+
+//Value Computed by CMake
 Mbed TLS_BINARY_DIR:STATIC=C:/Users/Admin/Desktop/ESP32/MQTT/build/esp-idf/mbedtls/mbedtls
 
 //Value Computed by CMake
@@ -384,15 +393,6 @@ mbedtls_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_
 
 //Dependencies for the target
 mbedx509_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_xtensa;general;mbedcrypto;
-
-//Value Computed by CMake
-mqtt_ssl_BINARY_DIR:STATIC=C:/Users/Admin/Desktop/ESP32/MQTT/build
-
-//Value Computed by CMake
-mqtt_ssl_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-mqtt_ssl_SOURCE_DIR:STATIC=C:/Users/Admin/Desktop/ESP32/MQTT
 
 //Dependencies for the target
 p256m_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_xtensa;
@@ -545,7 +545,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=116
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=115
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -597,7 +597,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
-_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/mqtt_ssl
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/MQTT
 _Python3_EXECUTABLE:INTERNAL=C:/Espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe
 //Python3 Properties
 _Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;11;2;32;;;C:\Espressif\tools\idf-python\3.11.2\Lib;C:\Espressif\tools\idf-python\3.11.2\Lib;C:\Espressif\python_env\idf5.3_py3.11_env\Lib\site-packages;C:\Espressif\python_env\idf5.3_py3.11_env\Lib\site-packages

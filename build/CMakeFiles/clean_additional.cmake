@@ -3,6 +3,8 @@ cmake_minimum_required(VERSION 3.16)
 
 if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "")
   file(REMOVE_RECURSE
+  "MQTT.bin"
+  "MQTT.map"
   "bootloader\\bootloader.bin"
   "bootloader\\bootloader.elf"
   "bootloader\\bootloader.map"
@@ -16,9 +18,6 @@ if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "")
   "flasher_args.json"
   "ldgen_libraries"
   "ldgen_libraries.in"
-  "mqtt_eclipseprojects_io.pem.S"
-  "mqtt_ssl.bin"
-  "mqtt_ssl.map"
   "project_elf_src_esp32.c"
   "x509_crt_bundle.S"
   )

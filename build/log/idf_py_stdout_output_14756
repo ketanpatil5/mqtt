@@ -1,170 +1,0 @@
-ets Jul 29 2019 12:21:46
-
-rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
-configsip: 0, SPIWP:0xee
-clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
-mode:DIO, clock div:2
-load:0x3fff0030,len:7176
-load:0x40078000,len:15564
-ho 0 tail 12 room 4
-load:0x40080400,len:4
-load:0x40080404,len:3904
-entry 0x40080640
-[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
-[0;32mI (31) boot: compile time Jan 29 2025 17:25:28[0m
-[0;32mI (31) boot: Multicore bootloader[0m
-[0;32mI (36) boot: chip revision: v3.1[0m
-[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
-[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
-[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
-[0;32mI (53) boot: Enabling RNG early entropy source...[0m
-[0;32mI (59) boot: Partition Table:[0m
-[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
-[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
-[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
-[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
-[0;32mI (92) boot: End of partition table[0m
-[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b1c4h ( 45508) map[0m
-[0;32mI (120) esp_image: segment 1: paddr=0001b1ec vaddr=3ffb0000 size=02364h (  9060) load[0m
-[0;32mI (124) esp_image: segment 2: paddr=0001d558 vaddr=40080000 size=02ac0h ( 10944) load[0m
-[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=19d64h (105828) map[0m
-[0;32mI (171) esp_image: segment 4: paddr=00039d8c vaddr=40082ac0 size=0afc8h ( 45000) load[0m
-[0;32mI (196) boot: Loaded app from partition at offset 0x10000[0m
-[0;32mI (196) boot: Disabling RNG early entropy source...[0m
-[0;32mI (208) cpu_start: Multicore app[0m
-[0;32mI (216) cpu_start: Pro cpu start user code[0m
-[0;32mI (216) cpu_start: cpu freq: 160000000 Hz[0m
-[0;32mI (216) app_init: Application information:[0m
-[0;32mI (219) app_init: Project name:     mqtt_ssl[0m
-[0;32mI (224) app_init: App version:      1[0m
-[0;32mI (228) app_init: Compile time:     Jan 29 2025 17:25:19[0m
-[0;32mI (234) app_init: ELF file SHA256:  d2d4017e9...[0m
-[0;32mI (240) app_init: ESP-IDF:          v5.3.1-dirty[0m
-[0;32mI (245) efuse_init: Min chip rev:     v0.0[0m
-[0;32mI (250) efuse_init: Max chip rev:     v3.99 [0m
-[0;32mI (255) efuse_init: Chip rev:         v3.1[0m
-[0;32mI (260) heap_init: Initializing. RAM available for dynamic allocation:[0m
-[0;32mI (267) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
-[0;32mI (273) heap_init: At 3FFB2C30 len 0002D3D0 (180 KiB): DRAM[0m
-[0;32mI (279) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
-[0;32mI (285) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
-[0;32mI (292) heap_init: At 4008DA88 len 00012578 (73 KiB): IRAM[0m
-[0;32mI (299) spi_flash: detected chip: generic[0m
-[0;32mI (303) spi_flash: flash io: dio[0m
-[0;33mW (306) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
-[0;32mI (320) main_task: Started on CPU0[0m
-[0;32mI (330) main_task: Calling app_main()[0m
-[0;32mI (1330) UART: response: AT
-OK
-[0m
-[0;32mI (2350) UART: response: AT+CFUN=1
-OK
-[0m
-[0;32mI (3350) UART: response: AT+CREG=2
-OK
-[0m
-[0;32mI (4350) UART: response: AT+CEREG=2
-OK
-[0m
-[0;32mI (5350) UART: response: AT+COPS?
-+COPS: 0,2,"40490",7
-
-OK
-[0m
-[0;32mI (6350) UART: response: AT+CGDCONT=1,"IP","airtelgprs.com"
-OK
-[0m
-[0;32mI (7350) UART: response: AT+CGATT=1
-OK
-[0m
-[0;32mI (8360) UART: response: AT+CGPADDR=1
-+CGPADDR: 1,100.64.100.184,254.128.0.0.0.0.0.0.0.0.0.0.18.45.183.197
-
-OK
-[0m
-[0;32mI (9710) UART: response: AT+CGACT=0,1
-OK
-
-+CGEV: ME PDN DEACT 1
-
-+CMQTTNONET
-[0m
-[0;32mI (10710) UART: response: AT+CGACT?
-+CGACT: 8,1
-
-OK
-[0m
-[0;32mI (11710) UART: response: AT+CEREG?
-+CEREG: 2,1,17D8,0E925867
-
-OK
-[0m
-[0;32mI (13710) UART: response: AT+CMQTTSTART
-OK
-
-+CMQTTSTART: 0
-[0m
-[0;32mI (15710) UART: response: AT+CMQTTDISC=0
-+CMQTTDISC: 0,11
-
-ERROR
-[0m
-[0;32mI (17710) UART: response: AT+CMQTTDISC=1
-+CMQTTDISC: 1,11
-
-ERROR
-[0m
-[0;32mI (20710) UART: response: AT+CMQTTSSLCFG=0,1
-OK
-[0m
-[0;32mI (21720) UART: response: AT+CSSLCFG=0
-+CSSLCFG: 0,4,1,1,300,"ca_cert.pem","client_cert.pem","client_key.pem","password.pem",1
-
-OK
-[0m
-[0;32mI (23730) UART: response: AT+CMQTTACCQ=0,"61f18205d9d64ad1b29f6e99d0679efc",1
-OK
-[0m
-[0;32mI (33740) UART: response: AT+CMQTTCONNECT=0,"tls://61f18205d9d64ad1b29f6e99d0679efc.s1.eu.hivemq.cloud:8883",60,1,"demo1","Demo1234"
-ERROR
-[0m
-[0;32mI (44590) UART: response: AT+CMQTTCONNECT=0,"tcp://5b341f479cfe4759bef47c1bb1d5807c.s1.eu.hivemq.cloud:8883",60,1,"demo1","Demo1234"
-+CMQTTCONNECT: 0,32
-
-ERROR
-[0m
-[0;32mI (45600) UART: response: AT+CMQTTCONNECT?
-+CMQTTCONNECT: 0
-+CMQTTCONNECT: 1
-
-OK
-[0m
-[0;32mI (55610) UART: response: AT+CMQTTCONNECT=0,"ssl://61f18205d9d64ad1b29f6e99d0679efc.s1.eu.hivemq.cloud:8883",60,1,"demo1","Demo1234"
-ERROR
-[0m
-[0;32mI (61140) UART: response: AT+CMQTTCONNECT=0,"tcp://61f18205d9d64ad1b29f6e99d0679efc.s1.eu.hivemq.cloud:8883",60,1,"demo1","Demo1234"
-+CMQTTCONNECT: 0,32
-
-ERROR
-[0m
-[0;32mI (61140) MQTT: MQTT connection response: AT+CMQTTCONNECT=0,"tcp://61f18205d9d64ad1b29f6e99d0679efc.s1.eu.hivemq.cloud:8883",60,1,"demo1","Demo1234"
-+CMQTTCONNECT: 0,32
-
-ERROR
-[0m
-[0;32mI (62160) UART: response: AT+CMQTTPUB=0,"esp32/test",1,0
-ERROR
-[0m
-[0;32mI (63160) UART: response: {"temperature": 25.6}
-ERROR
-[0m
-[0;32mI (64160) UART: response: AT+CMQTTSTOP
-+CMQTTSTOP: 19
-
-ERROR
-[0m
-[0;32mI (64160) MQTT: MQTT publish response: AT+CMQTTSTOP
-+CMQTTSTOP: 19
-
-ERROR
-[0m

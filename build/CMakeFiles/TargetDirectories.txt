@@ -12,7 +12,7 @@ C:/Users/Admin/Desktop/ESP32/MQTT/build/CMakeFiles/monitor.dir
 C:/Users/Admin/Desktop/ESP32/MQTT/build/CMakeFiles/flash.dir
 C:/Users/Admin/Desktop/ESP32/MQTT/build/CMakeFiles/encrypted-flash.dir
 C:/Users/Admin/Desktop/ESP32/MQTT/build/CMakeFiles/_project_elf_src.dir
-C:/Users/Admin/Desktop/ESP32/MQTT/build/CMakeFiles/mqtt_ssl.elf.dir
+C:/Users/Admin/Desktop/ESP32/MQTT/build/CMakeFiles/MQTT.elf.dir
 C:/Users/Admin/Desktop/ESP32/MQTT/build/CMakeFiles/size.dir
 C:/Users/Admin/Desktop/ESP32/MQTT/build/CMakeFiles/size-files.dir
 C:/Users/Admin/Desktop/ESP32/MQTT/build/CMakeFiles/size-components.dir
@@ -810,13 +810,6 @@ C:/Users/Admin/Desktop/ESP32/MQTT/build/esp-idf/wifi_provisioning/CMakeFiles/lis
 C:/Users/Admin/Desktop/ESP32/MQTT/build/esp-idf/wifi_provisioning/CMakeFiles/install.dir
 C:/Users/Admin/Desktop/ESP32/MQTT/build/esp-idf/wifi_provisioning/CMakeFiles/install/local.dir
 C:/Users/Admin/Desktop/ESP32/MQTT/build/esp-idf/wifi_provisioning/CMakeFiles/install/strip.dir
-C:/Users/Admin/Desktop/ESP32/MQTT/build/esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir
-C:/Users/Admin/Desktop/ESP32/MQTT/build/esp-idf/protocol_examples_common/CMakeFiles/edit_cache.dir
-C:/Users/Admin/Desktop/ESP32/MQTT/build/esp-idf/protocol_examples_common/CMakeFiles/rebuild_cache.dir
-C:/Users/Admin/Desktop/ESP32/MQTT/build/esp-idf/protocol_examples_common/CMakeFiles/list_install_components.dir
-C:/Users/Admin/Desktop/ESP32/MQTT/build/esp-idf/protocol_examples_common/CMakeFiles/install.dir
-C:/Users/Admin/Desktop/ESP32/MQTT/build/esp-idf/protocol_examples_common/CMakeFiles/install/local.dir
-C:/Users/Admin/Desktop/ESP32/MQTT/build/esp-idf/protocol_examples_common/CMakeFiles/install/strip.dir
 C:/Users/Admin/Desktop/ESP32/MQTT/build/esp-idf/main/CMakeFiles/__idf_main.dir
 C:/Users/Admin/Desktop/ESP32/MQTT/build/esp-idf/main/CMakeFiles/edit_cache.dir
 C:/Users/Admin/Desktop/ESP32/MQTT/build/esp-idf/main/CMakeFiles/rebuild_cache.dir
